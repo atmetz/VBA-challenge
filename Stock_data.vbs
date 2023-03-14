@@ -1,4 +1,3 @@
-Attribute VB_Name = "Module1"
 Sub StockAnalysis():
      
     'Declare variables
@@ -59,10 +58,12 @@ Sub StockAnalysis():
                 If YearlyChange >= 0 Then
 
                        ws.Cells(StockCount, 10).Interior.ColorIndex = 4
+                       ws.Cells(StockCount, 11).Interior.ColorIndex = 4
 
                    Else
 
                        ws.Cells(StockCount, 10).Interior.ColorIndex = 3
+                       ws.Cells(StockCount, 11).Interior.ColorIndex = 3
 
                    End If
                    
@@ -131,6 +132,3 @@ Sub StockAnalysis():
     Next
 
 End Sub
-
-
-
